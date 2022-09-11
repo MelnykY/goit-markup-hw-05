@@ -10,6 +10,7 @@
     --accent-color: #2196F3;
     --project-border-color: #EEEEEE;
     --address-color: #ffffff99;
+    --footer-socials-color: #ffffff10;
     /*bg-colors*/
     --main-bg-color: #F5F5F5;
     --secondary-bg-color: #F5F4FA;
@@ -766,7 +767,7 @@ footer
 .footer-socials-link {
     width: 44px;
     height: 44px;
-    background-color: #ffffff10;
+    background-color: var(--footer-socials-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
