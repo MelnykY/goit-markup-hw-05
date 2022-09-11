@@ -746,7 +746,7 @@ footer
     font-style: normal;
 }
 
-.footer-socials {}
+/*.footer-socials {}*/
 
 .footer-socials-heading {
     font-size: 14px;
@@ -771,6 +771,7 @@ footer
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-socials-item:hover,
