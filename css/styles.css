@@ -137,6 +137,8 @@ header
 }
 
 .logo {
+    display: block;
+    padding: 24px 91px 24px 0;
     font-family: var(--logo-font);
     font-size: 26px;
     line-height: calc(31 / 26);
@@ -243,6 +245,7 @@ index-page
     text-align: center;
     padding: 200px 0;
     max-width: 1600px;
+    margin: 0 auto;
 }
 
 .hero-heading {
