@@ -140,7 +140,8 @@ header
 
 .logo {
     display: block;
-    padding: 24px 91px 24px 0;
+    padding: 24px 0;
+    margin-right: 91px;
     font-family: var(--logo-font);
     font-size: 26px;
     line-height: calc(31 / 26);
@@ -285,9 +286,7 @@ index-page
     padding: 10px 28px;
     width: 216px;
     min-height: 50;
-    transition-property: background-color;
-    transition-duration: 550ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:active,
@@ -327,6 +326,7 @@ modal window
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button {
@@ -342,6 +342,7 @@ modal window
     background-color: var(--white-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -539,7 +540,7 @@ modal window
     display: flex;
     align-items: center;
     justify-content: center;
-    transition-property: color;
+    transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -598,7 +599,7 @@ clients
     height: 100%;
     border: 1px solid var(--icon-bg-color);
     border-radius: 4px;
-    transition-property: all;
+    transition-property: color, border-color;
     transition-duration: 650ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -652,7 +653,7 @@ portfolio-page
     height: 38px;
     cursor: pointer;
     padding: 6px 22px;
-transition-property: color, background-color, box-shadow;
+    transition-property: color, background-color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -726,8 +727,9 @@ transition-property: color, background-color, box-shadow;
     padding: 63px 24px;
     font-weight: 400;
     font-size: 18px;
-    line-height: calc(24 / 18);
+    line-height: calc(28 / 18);
     background-color: #2196f3e6;
+    letter-spacing: 0.03em;
     color: var(--white-color);
 
 }
@@ -736,6 +738,8 @@ transition-property: color, background-color, box-shadow;
 .portfolio-link:focus .overlay {
     transform: translateX(0);
 }
+
+/*.overlay-text {}*/
 
 /*===============
 footer
@@ -760,23 +764,20 @@ footer
 
 .logo-footer {
     color: var(--white-color);
-}
-
-.footer-logo-box {
     margin-bottom: 20px;
 }
+
+/*.footer-logo-box {}*/
 
 /*.footer-contacts {}*/
 
 .address-list {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    display: block;
     text-decoration: none;
     list-style: none;
     padding-left: 0;
-    gap: 10px;
     margin: 0;
+
 }
 
 .address-list-item {
@@ -789,6 +790,14 @@ footer
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-item {
+    margin-bottom: 9px;
+}
+
+.address-item:last-child {
+    margin-bottom: 0;
 }
 
 .address-location {
